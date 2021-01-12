@@ -1,0 +1,29 @@
+###クラス定義した場合以下の処理をメインpyに追加する###
+
+#モデル読み込み
+model = gensim.models.KeyedVectors.load_word2vec_format('model.vec', binary=False)
+
+#「非常にポジティブな単語」と「非常にネガティブな単語」を任意で指定
+happy = ['喜び','やったー']
+angle = ['怒り']
+sad = ['悲しい']
+joy = ['楽しい']
+
+#main処理
+x = '面白い'
+setup = Emotion(happy, angle, sad, joy, model)
+a = setup.emotion_score(x)
+print(a)
+
+'''
+#ループ処理
+x = ''
+print('終了する際は end と入力してください\n')
+while True:
+    x = input()
+    if x == 'end':
+        break
+    print(emotion_score(x))
+#print(posi_nega_score(x))
+print('入力モード終了')
+'''
