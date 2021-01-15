@@ -1,4 +1,4 @@
-import MeCab
+#import MeCab
 import openpyxl
 import pprint
 import itertools
@@ -50,7 +50,7 @@ for i in l_2d1:
 
 x = ''
 setup = Emotion(happy, angle, sad, joy, model)
-sw = Split_word()
+#sw = Split_word()
 
 ###___名詞用xlsx読み込み処理
 xe = XlsxExist() #elsxファイルがあるか確認

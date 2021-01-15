@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 ginza = "*"
 gensim = "*"
-openpyxl = "*"
+openpyxl = "==3.0.5"
 
 [dev-packages]
 
