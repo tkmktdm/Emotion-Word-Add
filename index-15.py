@@ -54,8 +54,10 @@ sw = Split_word()
 
 ###___名詞用xlsx読み込み処理
 xe = XlsxExist() #elsxファイルがあるか確認
-xe.xlsxCheck() 
+xe.xlsxCheck()
 xwr = XlsxWR() #名詞用elsxファイルの読み書き
+
+
 worddic = xwr.xlsxRead() #過去の名詞感情データ
 print('worddicの過去名詞感情データ')
 print(worddic)
