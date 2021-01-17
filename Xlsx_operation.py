@@ -47,7 +47,9 @@ class XlsxWR:
         wb.save('words_emo.xlsx')
         print('save')
 
-'''xe = XlsxExist()
+'''
+# 例
+xe = XlsxExist()
 xe.xlsxCheck()
 xwr = XlsxWR()
 worddic = xwr.xlsxRead()
@@ -56,4 +58,5 @@ words = [['鬼', '名詞', 0], ['滅', '名詞', 0], ['刃', '名詞', 0], ['最
 for w in words:
     worddic.append(w)
 
-xwr.xlsxWrite(worddic)'''
+xwr.xlsxWrite(worddic)
+'''
